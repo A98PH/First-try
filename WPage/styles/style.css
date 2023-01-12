@@ -1,0 +1,48 @@
+html {
+    background-color: bisque;
+}
+
+p {
+  color: orange;
+  font-family: 'Rowdies', cursive;
+  font-size: 20px;
+}
+
+h1 {
+    color: blue;
+    margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(9, 255, 0);
+  margin: 7px;
+padding: 20px 0;
+color: #00ff22;
+text-align:left;
+}
+
+
+button {
+  transition-duration: 0.4s;
+  background-color: #f44336;
+}
+
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ol {
+    color: blue;
+    font-family: 'Arial', cursive;
+  font-size: 12px;
+}
+
+body {
+    width: 900px;
+  margin: 0 auto;
+  background-color:black;
+}
