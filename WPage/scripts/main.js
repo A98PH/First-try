@@ -15,6 +15,7 @@ myImage.onclick = () => {
 };
 
 // Personalized welcome message code
+//Do not change beforehand
 
 let myButton = document.querySelector("button");
 let mySubHeading = document.querySelector("h2");
