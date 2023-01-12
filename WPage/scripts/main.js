@@ -15,29 +15,42 @@ myImage.onclick = () => {
 };
 
 // Personalized welcome message code
-//Do not change beforehand
+// Do not change beforehand
 
 let myButton = document.querySelector("button");
 let mySubHeading = document.querySelector("h2");
 
 function setUserName() {
-    const myName = prompt("Please enter your name.");
-    if (!myName) {
-        setUserName();
-      } else {
-    localStorage.setItem("name", myName);
-    mySubHeading.textContent = `IK is the best, ${myName}`;
+  const myName = prompt("Please enter your name.");
+  if (!myName) {
+      setUserName();
+    } else {
+  localStorage.setItem("name", myName);
+  mySubHeading.textContent = `IK is the best, ${myName}`;
   }
 }
 
-  if (!localStorage.getItem("name")) {
-    setUserName();
-  } else {
-    let storedName = localStorage.getItem("name");
-    myHeading.textContent = `IK is the best, ${storedName}`;
-  } 
+function nonUserName() {
+if (!localStorage.getItem("name")) {
+  setUserName();
+} else {
+  let storedName = localStorage.getItem("name");
+  mySubHeading.textContent = `IK is the best, ${storedName}`;
+  }
+}
 
+function init() {
   myButton.onclick = function() {
     setUserName();
   }
+  nonUserName()
+}
+
+init()
+
 alert("Inca Kola Web Page");
+
+//Consola
+
+let persona = {name: "Mario"}
+console.log(persona.name)
